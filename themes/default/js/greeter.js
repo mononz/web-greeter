@@ -410,6 +410,9 @@ class Theme {
 		this.prepare_session_list();
 		this.register_callbacks();
 		this.background_manager.setup_background_thumbnails();
+		
+		// Quick hack to auto press enter when login screen appears
+		this.key_press_handler({"which":13});
 	}
 
 
